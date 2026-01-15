@@ -21,6 +21,37 @@
             line-height: 1.6;
             overflow-x: hidden;
         }
+
+        /* Navbar scrolledpadding effect */
+            #navbar-main.scrolledpadding {
+                padding: 0.3rem 2rem !important;
+                height: 60px !important;
+                background: #2C0203 !important;
+                backdrop-filter: blur(10px);
+                transition: padding 0.3s, background 0.3s, height 0.3s;
+            }
+
+            #navbar-main.scrolledpadding .logo-placeholder img {
+                height: 40px !important;
+                margin-left: 40px !important;
+                transition: height 0.3s, margin-left 0.3s;
+            }
+
+            #navbar-main.scrolledpadding .nav-links a {
+                font-size: 0.8rem !important;
+                transition: font-size 0.3s;
+            }
+
+            #navbar-main.scrolledpadding .nav-links span {
+                font-size: 0.8rem !important;
+                transition: font-size 0.3s;
+            }
+
+            #navbar-main.scrolledpadding a[style*="background: rgb(12, 223, 12)"] {
+                padding: 0.4rem 1rem !important;
+                font-size: 0.9rem !important;
+                transition: padding 0.3s, font-size 0.3s;
+            }
         
         /* Animações */
         @keyframes fadeIn {
@@ -71,10 +102,10 @@
 </head>
 <body>
     <!-- NAVBAR -->
-    <nav id="navbar-main" style="position: fixed; top: 0; width: 100%; background: #240807; padding: 1rem 4rem; z-index: 1000; box-shadow: 0 4px 20px rgba(0,0,0,0.15);">
+    <nav id="navbar-main" style="position: fixed; top: 0; width: 100%; height: 90px; background: #2C0203; padding: 1rem 4rem; z-index: 1000; box-shadow: 0 4px 20px rgba(0,0,0,0.15);">
         <div style="display: flex; justify-content: space-between; align-items: center;">
             <div class="logo-placeholder">
-                <img src="image/Logo-Little-garden.jpg" alt="Little Garden Fotografia" style="height: 40px; margin-left: 80px;">
+                <img src="image/Recortelogo.png" alt="Little Garden Fotografia" style="height: 70px; margin-left: 80px;">
             </div>
             <div class="nav-links" style="display: flex; gap: 2rem; align-items: center;">
                 <a href="#diagnostico" style="color: #FFFFFF; text-decoration: none; font-weight: 600; font-size: 0.95rem; transition: color 0.3s;">Diagnóstico</a>
@@ -86,7 +117,7 @@
                 <a href="#estrategia" style="color: #FFFFFF; text-decoration: none; font-weight: 600; font-size: 0.95rem; transition: color 0.3s;">Estratégia</a>
             </div>
             <a href="https://wa.me/5516981005730?text=Fala%20William%20tudo%20joia%20%3F%20Via%20a%20sua%20an%C3%A1lise%20e%20gostaria%20de%20falar%20mais%20sobre%20o%20assunto." 
-               style="background: #E8B4B4; color: #240807; padding: 0.7rem 1.5rem; border-radius: 50px; font-weight: 700; font-size: 1.1rem; text-decoration: none; transition: all 0.3s; box-shadow: 0 4px 12px rgba(232, 180, 180, 0.3);">
+               style="background: rgb(12, 223, 12); color: #fff; align-items: center; padding: 0.7rem 1.5rem; border-radius: 10px; font-weight: 700; font-size: 1.1rem; text-decoration: none; transition: all 0.3s;">
                 Fale conosco
             </a>
         </div>
@@ -99,7 +130,7 @@
                 ⚠️ Visualização otimizada para Desktop
             </p>
             <p style="font-size: 1rem; margin-bottom: 0.5rem; color: rgba(255,255,255,0.9);">
-                Proposta exclusiva para Sabrina Briani • 17 de dezembro de 2025
+                Proposta exclusiva para Sabrina Briani • 14 de Janeiro de 2026
             </p>
             <h1 style="font-size: 3.5rem; font-weight: 800; margin: 1rem 0; line-height: 1.1;">
                 Análise e Estratégia Digital
@@ -118,22 +149,22 @@
     <!-- STATS CARDS (4 colunas com margin-top negativo) -->
     <section class="stats-section" style="padding: 0 4rem; margin-top: -60px; margin-bottom: 3rem;">
         <div class="stats-grid" style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 1.5rem;">
-            <div class="stat-card-1" style="background: white; padding: 2rem; border-radius: 12px; box-shadow: 0 8px 25px rgba(0,0,0,0.1); text-align: center; border-top: 4px solid #E8B4B4;">
+            <div class="stat-card-1" style="background: white; padding: 2rem; border-radius: 12px; box-shadow: 0 8px 25px rgba(0,0,0,0.1); text-align: center; border-top: 4px solid #D62f39;">
                 <span style="display: block; font-size: 3rem; font-weight: 800; color: #240807; margin-bottom: 0.5rem;">3.937</span>
                 <span style="display: block; font-size: 0.85rem; color: #666; text-transform: uppercase; letter-spacing: 1px;">Seguidores Instagram</span>
             </div>
             
-            <div class="stat-card-2" style="background: white; padding: 2rem; border-radius: 12px; box-shadow: 0 8px 25px rgba(0,0,0,0.1); text-align: center; border-top: 4px solid #E8B4B4;">
+            <div class="stat-card-2" style="background: white; padding: 2rem; border-radius: 12px; box-shadow: 0 8px 25px rgba(0,0,0,0.1); text-align: center; border-top: 4px solid #D62f39;">
                 <span style="display: block; font-size: 3rem; font-weight: 800; color: #240807; margin-bottom: 0.5rem;">484</span>
                 <span style="display: block; font-size: 0.85rem; color: #666; text-transform: uppercase; letter-spacing: 1px;">Posts Publicados</span>
             </div>
             
-            <div class="stat-card-3" style="background: white; padding: 2rem; border-radius: 12px; box-shadow: 0 8px 25px rgba(0,0,0,0.1); text-align: center; border-top: 4px solid #E8B4B4;">
+            <div class="stat-card-3" style="background: white; padding: 2rem; border-radius: 12px; box-shadow: 0 8px 25px rgba(0,0,0,0.1); text-align: center; border-top: 4px solid #D62f39;">
                 <span style="display: block; font-size: 3rem; font-weight: 800; color: #240807; margin-bottom: 0.5rem;">5.0⭐</span>
                 <span style="display: block; font-size: 0.85rem; color: #666; text-transform: uppercase; letter-spacing: 1px;">Google Reviews (43)</span>
             </div>
             
-            <div class="stat-card-4" style="background: white; padding: 2rem; border-radius: 12px; box-shadow: 0 8px 25px rgba(0,0,0,0.1); text-align: center; border-top: 4px solid #E8B4B4;">
+            <div class="stat-card-4" style="background: white; padding: 2rem; border-radius: 12px; box-shadow: 0 8px 25px rgba(0,0,0,0.1); text-align: center; border-top: 4px solid #D62f39;">
                 <span style="display: block; font-size: 3rem; font-weight: 800; color: #240807; margin-bottom: 0.5rem;">23+</span>
                 <span style="display: block; font-size: 0.85rem; color: #666; text-transform: uppercase; letter-spacing: 1px;">Anos de Experiência</span>
             </div>
@@ -142,67 +173,67 @@
 
     <!-- DIAGNÓSTICO DOS CANAIS DIGITAIS (3 cards lado a lado) -->
     <section id="diagnostico" style="padding: 1.5rem 4rem; margin-bottom: 3rem;">
-        <h2 style="font-size: 2.5rem; font-weight: 800; margin-bottom: 0.5rem; color: #240807;">Diagnóstico dos Canais Digitais</h2>
+        <h2 style="font-size: 2.5rem; font-weight: 800; margin-bottom: 0.5rem; color: #D62f39;">Diagnóstico dos Canais Digitais</h2>
         <p style="color: #666; max-width: 1000px; margin-bottom: 2rem; font-size: 1.05rem;">
             Análise técnica baseada nos dados públicos extraídos em dezembro de 2025. O objetivo é identificar gargalos que impedem a conversão de agenda cheia previsível.
         </p>
         
         <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem;">
             <!-- Card Instagram -->
-            <div class="card-instagram-diagnostico" style="background: white; padding: 2rem; border-radius: 12px; border-left: 4px solid #E8B4B4; box-shadow: 0 4px 20px rgba(0,0,0,0.08);">
+            <div class="card-instagram-diagnostico" style="background: white; padding: 2rem; border-radius: 12px; border: 2px solid #D62f39; box-shadow: 0 4px 20px rgba(0,0,0,0.08);">
                 <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
                     <span style="font-size: 2.5rem;">📱</span>
                     <span style="background: #fff3cd; color: #856404; padding: 0.3rem 0.8rem; border-radius: 20px; font-size: 0.7rem; font-weight: 700;">ATENÇÃO</span>
                 </div>
                 <h3 style="font-size: 1.4rem; font-weight: 700; margin-bottom: 1rem; color: #240807;">Instagram</h3>
                 <div style="margin-bottom: 1rem;">
-                    <span style="background: #d4edda; color: #155724; padding: 0.2rem 0.6rem; border-radius: 15px; font-size: 0.75rem; margin-right: 0.5rem;">3.937 seguidores</span>
-                    <span style="background: #fff3cd; color: #856404; padding: 0.2rem 0.6rem; border-radius: 15px; font-size: 0.75rem; margin-right: 0.5rem;">484 posts</span><br>
-                    <span style="background: #f8d7da; color: #721c24; padding: 0.2rem 0.6rem; border-radius: 15px; font-size: 0.75rem;">Engajamento relativamente baixo</span>
+                    <span style="background: #d4edda; color: #155724; padding: 0.2rem 0.6rem; border-radius: 15px; font-size: 0.75rem; margin-right: 0.5rem;font-weight: 600;">3.937 seguidores</span>
+                    <span style="background: #fff3cd; color: #856404; padding: 0.2rem 0.6rem; border-radius: 15px; font-size: 0.75rem; margin-right: 0.5rem;font-weight: 600;">484 posts</span><br>
+                    <span style="background: #f8d7da; color: #856404; padding: 0.2rem 0.6rem; border-radius: 15px; font-size: 0.75rem;font-weight: 600;">Engajamento Consistente</span>
                 </div>
                 <p style="font-size: 0.95rem; line-height: 1.6; margin-bottom: 1rem;">
-                    <strong style="color: #240807;">Situação atual:</strong> O perfil @littlegarden.fotografia funciona como "vitrine" de trabalhos finalizados, com foco no resultado (o "o que") em detrimento da história e emoção (o "porquê"). Conteúdo de alta qualidade visual, mas com baixo engajamento relativo. Frequência de postagens consistente, mas sem Reels, depoimentos em vídeo ou conteúdo de bastidores sistemático.
+                    <strong style="color: #240807;">Situação atual:</strong> O perfil @littlegarden.fotografia funciona como "vitrine" de trabalhos finalizados, com foco no resultado (o "o que") em detrimento da história e emoção (o "porquê"). Conteúdo de alta qualidade visual, mas com engajamento relativo. Frequência de postagens consistente, mas sem Reels, depoimentos em vídeo ou conteúdo de bastidores sistemático.
                 </p>
                 <p style="font-size: 0.95rem; line-height: 1.6; color: #240807;">
-                    <strong>Oportunidade:</strong> Implementar o funil AIDA completo, migrando de vitrine para plataforma de conexão emocional. Conteúdo de topo de funil (Reels educativos, bastidores) pode aumentar alcance em 40-60%. Humanização da marca (equipe, histórias) tende a aumentar engajamento para 3-7%.
+                    <strong><span style="color:  green;">Oportunidade:</span></strong> Implementar o funil AIDA completo, migrando de vitrine para plataforma de conexão emocional. Conteúdo de topo de funil (Reels educativos, bastidores) pode aumentar alcance em 40-60%. Humanização da marca (equipe, histórias) tende a aumentar engajamento para 3-7%.
                 </p>
             </div>
             
             <!-- Card Google Meu Negócio -->
-            <div class="card-gmb-diagnostico" style="background: white; padding: 2rem; border-radius: 12px; border-left: 4px solid #E8B4B4; box-shadow: 0 4px 20px rgba(0,0,0,0.08);">
+            <div class="card-gmb-diagnostico" style="background: white; padding: 2rem; border-radius: 12px; border: 2px solid #D62f39; box-shadow: 0 4px 20px rgba(0,0,0,0.08);">
                 <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
                     <span style="font-size: 2.5rem;">📍</span>
                     <span style="background: #f8d7da; color: #721c24; padding: 0.3rem 0.8rem; border-radius: 20px; font-size: 0.7rem; font-weight: 700;">CRÍTICO</span>
                 </div>
                 <h3 style="font-size: 1.4rem; font-weight: 700; margin-bottom: 1rem; color: #240807;">Google Meu Negócio</h3>
                 <div style="margin-bottom: 1rem;">
-                    <span style="background: #d4edda; color: #155724; padding: 0.2rem 0.6rem; border-radius: 15px; font-size: 0.75rem; margin-right: 0.5rem;">43 avaliações</span>
-                    <span style="background: #d4edda; color: #155724; padding: 0.2rem 0.6rem; border-radius: 15px; font-size: 0.75rem; margin-right: 0.5rem;">5.0⭐ perfeita</span>
-                    <span style="background: #f8d7da; color: #721c24; padding: 0.2rem 0.6rem; border-radius: 15px; font-size: 0.75rem;">Baixa frequência</span>
+                    <span style="background: #d4edda; color: #155724; padding: 0.2rem 0.6rem; border-radius: 15px; font-size: 0.75rem; margin-right: 0.5rem;font-weight: 600">43 avaliações</span>
+                    <span style="background: #d4edda; color: #155724; padding: 0.2rem 0.6rem; border-radius: 15px; font-size: 0.75rem; margin-right: 0.5rem;font-weight: 600">5.0⭐ perfeita</span>
+                    <span style="background: #f8d7da; color: #721c24; padding: 0.2rem 0.6rem; border-radius: 15px; font-size: 0.75rem;font-weight: 600">Baixa frequência</span>
                 </div>
                 <p style="font-size: 0.95rem; line-height: 1.6; margin-bottom: 1rem;">
                     <strong style="color: #240807;">Situação atual:</strong> Rating perfeito (5.0 com 43 reviews), mas com apenas ~4 fotos enviadas pelo proprietário em 4-5 anos. Sem postagens regulares no GMB, descrição curta (~150-200 caracteres), sem produtos/serviços cadastrados. Perfil completado em 70-80%. Views estimadas em 500-1.000/mês. Respostas a 80% das avaliações, mas frequência baixa de novas avaliações (2-3/mês nos últimos 3 meses, nenhuma recente).
                 </p>
                 <p style="font-size: 0.95rem; line-height: 1.6; color: #240807;">
-                    <strong>Oportunidade:</strong> Otimização SEO+Metadados local pode aumentar visualizações em 20-30% em 6 meses. Postagens semanais + 10 fotos/mês com legendas SEO podem gerar +15% visibilidade. Descrição expandida (500 caracteres) com keywords tende a aumentar cliques em buscas.
+                    <strong><span style="color:  green;">Oportunidade:</span></strong> Otimização SEO+Metadados local pode aumentar visualizações em 20-30% em 6 meses. Postagens semanais + 10 fotos/mês com legendas SEO podem gerar +15% visibilidade. Descrição expandida (500 caracteres) com keywords tende a aumentar cliques em buscas.
                 </p>
             </div>
             
             <!-- Card Site -->
-            <div class="card-site-diagnostico" style="background: white; padding: 2rem; border-radius: 12px; border-left: 4px solid #E8B4B4; box-shadow: 0 4px 20px rgba(0,0,0,0.08);">
+            <div class="card-site-diagnostico" style="background: white; padding: 2rem; border-radius: 12px; border: 2px solid #D62f39; box-shadow: 0 4px 20px rgba(0,0,0,0.08);">
                 <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
                     <span style="font-size: 2.5rem;">🌐</span>
                     <span style="background: #f8d7da; color: #721c24; padding: 0.3rem 0.8rem; border-radius: 20px; font-size: 0.7rem; font-weight: 700;">CRÍTICO</span>
                 </div>
                 <h3 style="font-size: 1.4rem; font-weight: 700; margin-bottom: 1rem; color: #240807;">Site Institucional ou LP</h3>
                 <div style="margin-bottom: 1rem;">
-                    <span style="background: #f8d7da; color: #721c24; padding: 0.2rem 0.6rem; border-radius: 15px; font-size: 0.75rem;">NÃO EXISTE</span>
+                    <span style="background: #f8d7da; color: #721c24; padding: 0.2rem 0.6rem; border-radius: 15px; font-size: 0.75rem;font-weight: 600">NÃO EXISTE</span>
                 </div>
                 <p style="font-size: 0.95rem; line-height: 1.6; margin-bottom: 1rem;">
                     <strong style="color: #240807;">Situação atual:</strong> Ausência total de site dedicado, é muito importante criar um site para posição no google. anúncios, SEO. Para aumento de procura e fechamento de contratos. Dependência exclusiva de Instagram, limitando SEO, autoridade e conversões qualificadas.
                 </p>
                 <p style="font-size: 0.95rem; line-height: 1.6; color: #240807;">
-                    <strong>Oportunidade:</strong> Site otimizado pode converter 40% mais views em clientes. Posicionamento SEO para "fotógrafo newborn Ribeirão Preto" (500-1.000 buscas/mês) pode capturar tráfego qualificado. Landing pages específicas por serviço tendem a aumentar conversão em 25-35%.
+                    <strong><span style="color:  green;">Oportunidade:</span></strong> Site otimizado pode converter 40% mais views em clientes. Posicionamento SEO para "fotógrafo newborn Ribeirão Preto" (500-1.000 buscas/mês) pode capturar tráfego qualificado. Landing pages específicas por serviço tendem a aumentar conversão em 25-35%.
                 </p>
             </div>
         </div>
@@ -217,7 +248,7 @@
                 <ul style="list-style: none; padding: 0;">
                     <li style="margin-bottom: 0.8rem; display: flex; align-items: start;">
                         <span style="color: #e74c3c; margin-right: 0.5rem; font-weight: 700;">✗</span>
-                        <span><strong>Instagram como vitrine:</strong> 3.937 seguidores com engajamento legal, mas baixo, foco apenas em resultado final, sem conteúdo educativo ou emocional</span>
+                        <span><strong>Instagram como vitrine:</strong> 3.937 seguidores com engajamento legal e consistente, foco apenas em resultado final, sem conteúdo educativo ou emocional</span>
                     </li>
                     <li style="margin-bottom: 0.8rem; display: flex; align-items: start;">
                         <span style="color: #e74c3c; margin-right: 0.5rem; font-weight: 700;">✗</span>
@@ -238,8 +269,8 @@
             <div style="font-size: 3rem; color: #E8B4B4; font-weight: 700;">→</div>
             
             <!-- Solução -->
-            <div class="solution-box-scenario" style="background: white; padding: 2rem; border-radius: 12px; border-left: 4px solid #E8B4B4; box-shadow: 0 4px 20px rgba(0,0,0,0.08);">
-                <h4 style="font-size: 1.2rem; font-weight: 700; margin-bottom: 1rem; color: #E8B4B4;">✓ Cenário com Estratégia</h4>
+            <div class="solution-box-scenario" style="background: white; padding: 2rem; border-radius: 12px; border: 3px solid #D62f39; box-shadow: 0 4px 20px rgba(0,0,0,0.08);">
+                <h4 style="font-size: 1.2rem; font-weight: 700; margin-bottom: 1rem; color: #D62f39;">✓ Cenário com Estratégia</h4>
                 <ul style="list-style: none; padding: 0;">
                     <li style="margin-bottom: 0.8rem; display: flex; align-items: start;">
                         <span style="color: #27ae60; margin-right: 0.5rem; font-weight: 700;">✓</span>
@@ -326,7 +357,7 @@
         <div style="display: grid; grid-template-columns: 1.5fr 1fr; gap: 2rem; align-items: start;">
             <!-- Coluna 1: Contexto -->
             <div>
-                <h2 style="font-size: 2.5rem; font-weight: 800; margin-bottom: 1rem; color: #240807;">Pesquisa de Mercado</h2>
+                <h2 style="font-size: 2.5rem; font-weight: 800; margin-bottom: 1rem; color: #D62f39;">Pesquisa de Mercado</h2>
                 <p style="font-size: 1rem; line-height: 1.6; color: #666; margin-bottom: 1.5rem;">
                     Ribeirão Preto, 720.000+ habitantes. Cidade grande com dinâmica de interior → confiança, indicação e reputação local pesam muito. Forte presença de classe média/alta e profissionais liberais (médicos, dentistas, empresários, agronegócio). Alto volume de gestantes/ano e famílias jovens.
                 </p>
@@ -363,7 +394,7 @@
             </div>
             
             <!-- Coluna 2: Box ICP -->
-            <div class="icp-box-market" style="background: linear-gradient(135deg, #240807, #3a1210); color: white; padding: 2rem; border-radius: 12px; box-shadow: 0 8px 25px rgba(0,0,0,0.15);">
+            <div class="icp-box-market" style="background: linear-gradient(135deg, #240807, #D62f39); color: white; padding: 2rem; border-radius: 12px; box-shadow: 0 8px 25px rgba(0,0,0,0.15);">
                 <h3 style="font-size: 1.3rem; font-weight: 700; margin-bottom: 0.5rem; color: #E8B4B4; text-transform: uppercase; letter-spacing: 0.1rem; font-size: 0.9rem;">Perfil do Cliente Ideal (ICP)</h3>
                 
                 <div class="icp-item-1" style="margin-bottom: 1.5rem; padding-bottom: 1.5rem; border-bottom: 1px solid rgba(255,255,255,0.2);">
@@ -428,7 +459,7 @@
                     <p style="margin-bottom: 0.3rem;"><strong>Pesquisas de mercado</strong> indicam que fechar pacotes do funil natural com preço mais acessível (gestante → newborn → acompanhamento → família) pode aumentar LTV em 3-5x.</p>
                 </div>
             </div>
-            <p style="font-weight: 400; color: #240807;">
+            <p style="font-weight: 400; color: #240807; margin-top: -3rem;">
                 <strong>Potencial: +100% na margem bruta mensal com digitalização profissional</strong>
             </p>
         </div>
@@ -436,7 +467,7 @@
 
     <!-- ANÁLISE DE CONCORRENTES (Tabela completa) -->
     <section id="concorrentes" style="padding: 1.5rem 4rem; margin-bottom: 3rem;">
-        <h2 style="font-size: 2.5rem; font-weight: 800; margin-bottom: 0.1rem; color: #240807;">Benchmark Competitivo</h2>
+        <h2 style="font-size: 2.5rem; font-weight: 800; margin-bottom: 0.1rem; color: #D62f39;">Benchmark Competitivo</h2>
         <p style="color: #666; margin-bottom: 2rem; font-size: 1.05rem;">Comparativo direto de presença digital em fotografia newborn/família em Ribeirão Preto.</p>
         
         <div style="overflow-x: auto; border-radius: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.08); margin-bottom: 2rem;">
@@ -512,14 +543,14 @@
 
     <!-- CUSTO SILENCIOSO DE NÃO AGIR -->
     <section class="inaction-cost-section" style="padding: 1.5rem 4rem; margin-bottom: 3rem;">
-        <h2 style="font-size: 2.5rem; font-weight: 800; margin-bottom: 1rem; color: #240807;">O Custo Silencioso de Não Agir</h2>
+        <h2 style="font-size: 2.5rem; font-weight: 800; margin-bottom: 1rem; color: #D62f39;">O Custo Silencioso de Não Agir</h2>
         <p style="font-size: 1rem; line-height: 1.6; color: #666; max-width: 100%; margin-bottom: 2rem;">
             Não vou dizer "você precisa decidir hoje". Isso seria desrespeitar seu processo. Mas vale entender o que está acontecendo agora, enquanto não há estratégia digital ativa.
         </p>
-        
-        <div class="cost-box-inaction" style="background: linear-gradient(135deg, #240807, #3a1210); border: 3px solid #e74c3c; padding: 2.5rem; border-radius: 12px; color: white; display: grid; grid-template-columns: 1fr auto 1fr; gap: 2rem; align-items: center;">
+
+        <div class="cost-box-inaction" style="background: linear-gradient(135deg, #240807, #D62f39); border: 3px solid yellow; padding: 2.5rem; border-radius: 12px; color: white; display: grid; grid-template-columns: 1fr auto 1fr; gap: 2rem; align-items: center;">
             <div class="cost-items-left">
-                <h3 style="font-size: 1.5rem; font-weight: 700; margin-bottom: 1.5rem; color: #E8B4B4;">⏰ CUSTO DA INAÇÃO</h3>
+                <h3 style="font-size: 1.5rem; font-weight: 700; margin-bottom: 1.5rem; color: #D62f39;">⏰ CUSTO DA INAÇÃO</h3>
                 <ul style="list-style: none; padding: 0;">
                     <li style="margin-bottom: 1rem; display: flex; align-items: start;">
                         <span style="color: #e74c3c; font-size: 1.5rem; margin-right: 0.8rem;">📉</span>
@@ -557,7 +588,7 @@
 
     <!-- MÉTODO AIDA (4 cards lado a lado) -->
     <section class="aida-section" style="padding: 1.5rem 4rem; margin-bottom: 3rem;">
-        <div class="aida-container-main" style="background: linear-gradient(135deg, #240807, #3a1210); padding: 2.5rem; border-radius: 16px;">
+        <div class="aida-container-main" style="background: linear-gradient(135deg,#240807, #D62f39); padding: 2.5rem; border-radius: 16px;">
             <h2 style="font-size: 2.5rem; font-weight: 800; margin-bottom: 1rem; color: white;">Método AIDA (Estratégia Instagram)</h2>
             <p style="font-size: 1rem; line-height: 1.6; color: rgba(255,255,255,0.9); max-width: 100%; margin-bottom: 2rem;">
                 Atualmente, o Instagram da Little Garden foca apenas em <strong>Desejo/Ação (fundo de funil)</strong>. Para aumentar alcance e engajamento, o funil completo precisa ser implementado:
@@ -635,7 +666,7 @@
 
     <!-- IDEIAS DE ANÚNCIOS (Google + Meta) -->
     <section id="estrategia" style="padding: 1.5rem 4rem; margin-bottom: 3rem; background: #f9fafb; border-radius: 16px;">
-        <h2 style="font-size: 2.5rem; font-weight: 800; margin-bottom: 1rem; color: #240807;">Ideias de Anúncios (Google Ads + Meta Ads)</h2>
+        <h2 style="font-size: 2.5rem; font-weight: 800; margin-bottom: 1rem; color: #D62f39;">Ideias de Anúncios (Google Ads + Meta Ads)</h2>
         <p style="color: #666; margin-bottom: 2rem; font-size: 1.05rem;">Palavras-chave e criativos estratégicos para fotografia newborn/gestante em Ribeirão Preto:</p>
         
         <!-- Google Ads -->
@@ -715,7 +746,7 @@
         
         <!-- Meta Ads -->
         <div>
-            <h3 style="font-size: 1.5rem; font-weight: 700; margin-bottom: 1rem; color: #240807; display: flex; align-items: center;">
+            <h3 style="font-size: 1.5rem; font-weight: 700; margin-bottom: 1rem; color: #D62f39; display: flex; align-items: center;">
                 <span style="color: #006AFF; margin-right: 0.5rem;">📱</span> Meta Ads (Instagram/Facebook - Conscientização)
             </h3>
             
@@ -763,68 +794,68 @@
 
     <!-- PLANO ESTRATÉGICO 90 DIAS (2 fases lado a lado) -->
     <section class="plan-section" style="padding: 1.5rem 4rem; margin-bottom: 3rem;">
-        <h2 style="font-size: 2.5rem; font-weight: 800; margin-bottom: 2rem; text-align: center; color: #240807;">Plano de Ação 90 Dias</h2>
+        <h2 style="font-size: 2.5rem; font-weight: 800; margin-bottom: 2rem; text-align: center; color: #D62f39;">Plano de Ação 90 Dias</h2>
         
         <div class="plan-grid-two" style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem;">
             <!-- Fase 1 -->
-            <div class="phase-card-1" style="background: white; border-top: 4px solid #240807; padding: 2rem; border-radius: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.08);">
+            <div class="phase-card-1" style="background: white; border: 2px solid #240807; padding: 2rem; border-radius: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.08);">
                 <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1.5rem;">
                     <h3 style="font-size: 1.3rem; font-weight: 700;">Fase 1: Fundamentos</h3>
                     <span style="background: #f0f0f0; padding: 0.3rem 1rem; border-radius: 20px; font-size: 0.8rem; font-weight: 700;">Dias 0-30</span>
                 </div>
                 <ul style="list-style: none; padding: 0;">
                     <li style="margin-bottom: 1rem; display: flex; align-items: start;">
-                        <span style="color: #E8B4B4; margin-right: 0.8rem; font-weight: 700;">✓</span>
+                        <span style="color: #D62f39; margin-right: 0.8rem; font-weight: 700;">✓</span>
                         <span style="line-height: 1.6;">Site institucional ou LP básico otimizado para SEO</span>
                     </li>
                     <li style="margin-bottom: 1rem; display: flex; align-items: start;">
-                        <span style="color: #E8B4B4; margin-right: 0.8rem; font-weight: 700;">✓</span>
+                        <span style="color: #D62f39; margin-right: 0.8rem; font-weight: 700;">✓</span>
                         <span style="line-height: 1.6;">Reativação do Google Meu Negócio: 10 fotos/mês com legendas SEO + Metadados, postagens semanais, descrição expandida e produtos cadastrados</span>
                     </li>
                     <li style="margin-bottom: 1rem; display: flex; align-items: start;">
-                        <span style="color: #E8B4B4; margin-right: 0.8rem; font-weight: 700;">✓</span>
+                        <span style="color: #D62f39; margin-right: 0.8rem; font-weight: 700;">✓</span>
                         <span style="line-height: 1.6;">Conteúdo Instagram AIDA: 2-3 Reels/semana (atenção), 1 carrossel/semana (interesse), legendas revisadas com CTAs claros e palavras chaves</span>
                     </li>
                     <li style="margin-bottom: 1rem; display: flex; align-items: start;">
-                        <span style="color: #E8B4B4; margin-right: 0.8rem; font-weight: 700;">✓</span>
+                        <span style="color: #D62f39; margin-right: 0.8rem; font-weight: 700;">✓</span>
                         <span style="line-height: 1.6;">Sistema de captura: Formulário de contato no site, link na bio otimizado (WhatsApp direto + landing page simples)</span>
                     </li>
                     <li style="display: flex; align-items: start;">
-                        <span style="color: #E8B4B4; margin-right: 0.8rem; font-weight: 700;">✓</span>
+                        <span style="color: #D62f39; margin-right: 0.8rem; font-weight: 700;">✓</span>
                         <span style="line-height: 1.6;">Benchmark e métricas: Configurar Google Analytics, Meta Pixel, acompanhamento de leads origem</span>
                     </li>
                     <li style="display: flex; align-items: start;">
-                        <span style="color: #E8B4B4; margin-right: 0.8rem; font-weight: 700;">✓</span>
+                        <span style="color: #D62f39; margin-right: 0.8rem; font-weight: 700;">✓</span>
                         <span style="line-height: 1.6;">Primeiros anúncios no Instagram para chamar atenção e reter.</span>
                     </li>
                 </ul>
             </div>
             
             <!-- Fase 2 -->
-            <div class="phase-card-2" style="background: white; border-top: 4px solid #E8B4B4; padding: 2rem; border-radius: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.08);">
+            <div class="phase-card-2" style="background: white; border: 3px solid #D62f39; padding: 2rem; border-radius: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.08);">
                 <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1.5rem;">
                     <h3 style="font-size: 1.3rem; font-weight: 700;">Fase 2: Aceleração</h3>
                     <span style="background: rgba(232, 180, 180, 0.15); color: #240807; padding: 0.3rem 1rem; border-radius: 20px; font-size: 0.8rem; font-weight: 700;">Dias 30-90</span>
                 </div>
                 <ul style="list-style: none; padding: 0;">
                     <li style="margin-bottom: 1rem; display: flex; align-items: start;">
-                        <span style="color: #E8B4B4; margin-right: 0.8rem; font-weight: 700;">✓</span>
+                        <span style="color: #D62f39; margin-right: 0.8rem; font-weight: 700;">✓</span>
                         <span style="line-height: 1.6;">Campanhas Google Ads com palavras-chave estratégicas (ensaio newborn/gestante Ribeirão Preto)</span>
                     </li>
                     <li style="margin-bottom: 1rem; display: flex; align-items: start;">
-                        <span style="color: #E8B4B4; margin-right: 0.8rem; font-weight: 700;">✓</span>
+                        <span style="color: #D62f39; margin-right: 0.8rem; font-weight: 700;">✓</span>
                         <span style="line-height: 1.6;">Ou campanhas no Meta Ads: focado em conscientização (Reels, carrosséis) + remarketing para visitantes do site</span>
                     </li>
                     <li style="margin-bottom: 1rem; display: flex; align-items: start;">
-                        <span style="color: #E8B4B4; margin-right: 0.8rem; font-weight: 700;">✓</span>
+                        <span style="color: #D62f39; margin-right: 0.8rem; font-weight: 700;">✓</span>
                         <span style="line-height: 1.6;">Otimização contínua: Teste A/B em anúncios, landing pages, CTAs. Ajuste com base em dados reais (CAC, conversão)</span>
                     </li>
                     <li style="margin-bottom: 1rem; display: flex; align-items: start;">
-                        <span style="color: #E8B4B4; margin-right: 0.8rem; font-weight: 700;">✓</span>
+                        <span style="color: #D62f39; margin-right: 0.8rem; font-weight: 700;">✓</span>
                         <span style="line-height: 1.6;">Criação de um <strong><span style="color:red">PINTEREST</span></strong> para marcar mais posições em buscas pelo Google de forma orgânica</span>
                     </li>
                     <li style="display: flex; align-items: start;">
-                        <span style="color: #E8B4B4; margin-right: 0.8rem; font-weight: 700;">✓</span>
+                        <span style="color: #D62f39; margin-right: 0.8rem; font-weight: 700;">✓</span>
                         <span style="line-height: 1.6;">Sistema de indicação: Programa estruturado para clientes indicarem (desconto no próximo ensaio)</span>
                     </li>
                 </ul>
@@ -856,7 +887,7 @@
 
     <!-- CLAREZA DE VALOR + ROI -->
     <section id="roi" style="padding: 1.5rem 4rem; margin-bottom: 3rem;">
-        <h2 style="font-size: 2.5rem; font-weight: 800; margin-bottom: 2rem; text-align: center; color: #240807;">Clareza de Valor</h2>
+        <h2 style="font-size: 2.5rem; font-weight: 800; margin-bottom: 2rem; text-align: center; color: #D62f39;">Clareza de Valor</h2>
         
         <!-- AVISO OBRIGATÓRIO -->
         <div class="warning-box-roi" style="background: #fff3cd; border-left: 4px solid #f39c12; padding: 1.5rem; border-radius: 12px; margin-bottom: 3rem;">
@@ -890,7 +921,7 @@
             </div>
             
             <!-- Card Anúncios -->
-            <div class="value-card-ads" style="background: linear-gradient(135deg, rgba(232, 180, 180, 0.1), rgba(232, 180, 180, 0.05)); padding: 1.8rem; border-radius: 12px; border: 3px solid #E8B4B4; box-shadow: 0 8px 25px rgba(232, 180, 180, 0.2);">
+            <div class="value-card-ads" style="background: linear-gradient(135deg, rgba(232, 180, 180, 0.1), rgba(232, 180, 180, 0.05)); padding: 1.8rem; border-radius: 12px; border: 3px solid green; box-shadow: 0 8px 25px rgba(232, 180, 180, 0.2);">
                 <h4 style="font-size: 1.1rem; font-weight: 700; margin-bottom: 1rem; color: #240807;">📢 Anúncios Pagos (Google + Meta)</h4>
                 <p style="font-size: 0.9rem; margin-bottom: 0.5rem;"><strong>Investimento:</strong> R$ 1.500-2.300/mês</p>
                 <p style="font-size: 0.9rem; margin-bottom: 0.5rem;"><strong>Leads:</strong> 15-25/mês combinados</p>
@@ -902,7 +933,7 @@
         
         <!-- ROI DETALHADO -->
         <div style="background: linear-gradient(135deg, rgba(232, 180, 180, 0.15), rgba(232, 180, 180, 0.05)); padding: 2.5rem; border-radius: 16px; margin-bottom: 3rem;">
-            <h3 style="font-size: 1.8rem; font-weight: 700; margin-bottom: 1.5rem; text-align: center; color: #240807;">🎯 Projeção de ROI (Retorno sobre Investimento)</h3>
+            <h3 style="font-size: 1.8rem; font-weight: 700; margin-bottom: 1.5rem; text-align: center; color: #D62f39;">🎯 Projeção de ROI (Retorno sobre Investimento)</h3>
             
             <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; margin-bottom: 2rem;">
                 <!-- Conservador -->
@@ -919,7 +950,7 @@
                 
                 <!-- Otimista -->
                 <div class="roi-box-otimista" style="background: white; padding: 2rem; border-radius: 12px; border-left: 4px solid #E8B4B4; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
-                    <h4 style="font-size: 1.2rem; font-weight: 700; margin-bottom: 1rem; color: #E8B4B4;">📈 Cenário OTIMISTA (90 dias)</h4>
+                    <h4 style="font-size: 1.2rem; font-weight: 700; margin-bottom: 1rem; color: #D62f39;">📈 Cenário OTIMISTA (90 dias)</h4>
                     <p style="font-size: 0.95rem; margin-bottom: 0.5rem;">Investimento: R$ 2.200/mês</p>
                     <p style="font-size: 0.95rem; margin-bottom: 0.5rem;">Leads: 30 qualificados/mês</p>
                     <p style="font-size: 0.95rem; margin-bottom: 0.5rem;">Conversão: 40% = 12 ensaios/mês</p>
@@ -927,7 +958,7 @@
                     <p style="font-size: 0.95rem; margin-bottom: 1rem; padding-top: 1rem; border-top: 2px solid #f0f0f0;">
                         → 12 ensaios × R$ 1.100 = R$ 13.200 receita + Upsell
                     </p>
-                    <p style="font-size: 1.1rem; font-weight: 700; color: #E8B4B4;"><strong>ROI: 6.0x</strong> (R$ 13.200 ÷ R$ 2.200)</p>
+                    <p style="font-size: 1.1rem; font-weight: 700; color: #D62f39;"><strong>ROI: 6.0x</strong> (R$ 13.200 ÷ R$ 2.200)</p>
                 </div>
             </div>
             
@@ -935,7 +966,7 @@
         
         <!-- EXPECTATIVA REALISTA -->
         <div class="expectativa-section-final">
-            <h3 style="font-size: 1.8rem; font-weight: 700; margin-bottom: 1rem; text-align: center; color: #240807;">🎯 Expectativa Realista para Little Garden Fotografia</h3>
+            <h3 style="font-size: 1.8rem; font-weight: 700; margin-bottom: 1rem; text-align: center; color: #D62f39;">🎯 Expectativa Realista para Little Garden Fotografia</h3>
             <p style="text-align: center; color: #666; margin-bottom: 2rem; max-width: 100%; margin-left: auto; margin-right: auto;">
                 Considerando que vocês já têm <strong>3.937 seguidores, 43 avaliações 5.0⭐, 23+ anos de experiência e atuam em Ribeirão Preto (mercado premium)</strong>:
             </p>
@@ -1070,11 +1101,9 @@
         const navbar = document.getElementById('navbar-main');
         window.addEventListener('scroll', () => {
             if (window.scrollY > 100) {
-                navbar.style.boxShadow = '0 4px 20px rgba(0,0,0,0.15)';
-                navbar.style.background = '#240807';
+                navbar.classList.add('scrolledpadding');
             } else {
-                navbar.style.boxShadow = '0 4px 20px rgba(0,0,0,0.15)';
-                navbar.style.background = '#240807';
+                navbar.classList.remove('scrolledpadding');
             }
         });
         
